@@ -1,0 +1,3 @@
+git stash apply applies stashed changes to your code and keeps the stash available for later use.
+git stash pop applies the changes and deletes the stash. Use git stash apply when you need to reuse the stash, 
+and git stash pop when you don't.
