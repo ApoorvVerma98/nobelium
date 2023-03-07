@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Heading from "./Heading";
+import InputFields from "./InputFields";
+import SubmitButton from "./SubmitButton";
 
-function App() {
+const App = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // handle form submission logic here
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="form-box">
+      <form onSubmit={handleSubmit}>
+        <Heading text="Register Here..." />
+        <InputFields />
+        <SubmitButton text="Submit" handleSubmit={handleSubmit} />
+      </form>
     </div>
   );
-}
+};
 
 export default App;
+
+//.........//.........//.........//.........//.........//.........//.........//.........//.........//.........//........//.........//.........
+
+// import './App.css';
+
+// function App() {
+//   return (
+  
+//     <div className="form-box">
+//     <form>
+//     <h1> Register here... </h1>
+//       <input type= "text" placeholder= "Mobile No..."></input><br>
+//       </br>
+//       <input type= "text" placeholder= "Password..."></input><br>
+//       </br>
+//       <button>Submit</button><br>
+//       </br>
+
+//     </form>
+//   </div>
+
+//   );
+// }
+
+// export default App;
