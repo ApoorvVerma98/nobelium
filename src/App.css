@@ -1,38 +1,64 @@
+/*first block sets the text alignment to center uses a sans-serif font, centers the container in the middle of the page, and sets its width to 50%. */
 .App {
   text-align: center;
+  font-family: sans-serif;
+  margin: 0 auto;
+  width: 50%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*second block sets the margin-top property for the "h1" element to 50px. */
+h1 {
+  margin-top: 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* third block the margin-top property for the "form" element to 30px and uses flexbox to center its content. */
+form {
+  margin-top: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+/*fourth block sets the padding to 10px, the margin-right property to 10px, the border-radius to 5px, and removes the border.*/
+input[type='text'] {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+/*fifth block sets the padding to 10px, the border-radius to 5px, removes the border, sets the background color to green (#4caf50), and the text color to white. */
+button[type='submit'] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/*sixth block the "ul" element that contains the list of tasks. It sets the margin-top property to 30px and the text alignment to left.*/
+ul {
+  margin-top: 30px;
+  text-align: left;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* seventh block  the "li" element that contains each task. It sets the margin-bottom property to 10px  removes the list-style,
+adds a border with a color of #ddd, and adds padding of 10px.*/
+li {
+  margin-bottom: 10px;
+  list-style: none;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+/* eighth block code sets the margin-top property for the "p" element to 30px.*/
+p {
+  margin-top: 30px;
+}
+/*ninth block it sets the padding to 10px, the border-radius to 5px,
+removes the border, sets the background color to green (#4caf50), and the text color to white. It also sets the margin-right property to 10px.*/
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  margin-right: 10px;
+}
+/*tenth block sets the margin-right property to 0 for the last button element in the container.
+This ensures that there is no unnecessary space after the last button.*/
+button:last-of-type {
+  margin-right: 0;
 }
