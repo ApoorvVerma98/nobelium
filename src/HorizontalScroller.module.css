@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .header {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000000;
+    text-shadow: 2px 2px #d80dc4;
+  }
+  
+  .description {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #3C3C3C;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+  }
+  
+  .card {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #c885c2;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    cursor: pointer; /* adds a cursor pointer on hover */
+    transition: all 0.3s ease; /* adds a smooth transition on hover */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* scales up the card on hover */
+    background-color: #9b3492; /* changes the background color on hover */
+  }
+
+  .image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #353333;
+  }
+  
+  .designation {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #25057f;
+  }
+  
+  .experience {
+    font-size: 16px;
+    color: #353333;
+  }
